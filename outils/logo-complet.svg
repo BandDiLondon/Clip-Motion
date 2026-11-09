@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 316 64" width="316" height="64">
+  <title>Clip Motion</title>
+  <style>
+    .nom { fill: #191c22; font: 700 38px "Segoe UI", system-ui, sans-serif; letter-spacing: -.5px; }
+    .sous { fill: #677083; font: 500 11px "Segoe UI", system-ui, sans-serif; letter-spacing: 1.6px; }
+    @media (prefers-color-scheme: dark) { .nom { fill: #e7e9ee; } .sous { fill: #8b94a5; } }
+  </style>
+  <defs>
+    <linearGradient id="fond" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4c5fd5"/>
+      <stop offset="1" stop-color="#a346c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#fond)"/>
+  <rect x="9" y="19" width="25" height="27" rx="5" fill="#fff" opacity=".22"/>
+  <rect x="16" y="18" width="26" height="29" rx="5.5" fill="#fff" opacity=".45"/>
+  <rect x="24" y="16" width="30" height="33" rx="6.5" fill="#fff"/>
+  <path d="M35 25.2v14.6c0 .9 1 1.4 1.7.9l10.6-7.3c.6-.4.6-1.3 0-1.7L36.7 24.3c-.7-.5-1.7 0-1.7.9z" fill="#7a52cf"/>
+  <text class="nom" x="80" y="40">Clip Motion</text>
+  <text class="sous" x="81" y="57">IMAGES → VIDÉOS</text>
+</svg>

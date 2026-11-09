@@ -1,0 +1,14 @@
+# Dépôt public : liste blanche. Tout est ignoré sauf ce qui est listé ci-dessous.
+# (ComfyUI et les modèles ~37 Go, les vidéos de rendus/, les sources, les notes de travail restent en local.)
+/*
+!/.gitignore
+!/.gitattributes
+!/LICENSE
+!/README.md
+!/Clip Motion.bat
+!/outils/
+!/docs/
+
+outils/__pycache__/
+outils/config.json
+*.pyc
