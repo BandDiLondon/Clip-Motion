@@ -74,6 +74,25 @@ Windows 11 with an AMD Radeon RX 9070 XT (16 GB, ROCm); the post-processing step
 
 ## Installation
 
+1. Télécharge ce dépôt (**Code → Download ZIP**, puis décompresse) ou `git clone`, de préférence près de la racine
+   du disque (ex. `C:\Clip-Motion`).
+2. Double-clique sur **`Installer.bat`**. Il affiche ce qui manque et la place nécessaire, demande confirmation, puis
+   installe sans droits administrateur :
+   - ComfyUI portable pour AMD **v0.44.0** (1,7 Go, ~8 Go une fois décompressé) dans `comfyui\` ;
+   - le nœud ComfyUI-GGUF (version figée) et le paquet Python `gguf` ;
+   - les 6 modèles Wan 2.2 (~29 Go).
+
+   Chaque fichier téléchargé est vérifié par sa taille et son empreinte SHA256. L'installateur se relance sans
+   risque : il reprend un téléchargement coupé et saute ce qui est déjà installé. Options : `-Verifier` (contrôle
+   aussi les modèles déjà présents), `-SansModeles`.
+3. Double-clique sur **`Clip Motion.bat`**.
+
+**Avec un assistant IA** (Claude Code, Codex, Cursor…) : demande-lui de lire [`AGENTS.md`](AGENTS.md), qui décrit la
+procédure exacte d'installation, les vérifications et ce qu'il ne doit pas faire.
+
+<details>
+<summary><b>Installation manuelle</b> (ce que fait <code>Installer.bat</code>, étape par étape)</summary>
+
 Clip Motion n'a besoin d'aucune bibliothèque Python : il tourne avec le Python fourni par ComfyUI portable.
 L'arborescence attendue est la suivante :
 
@@ -89,8 +108,8 @@ Clip Motion\
 Télécharge ce dépôt (**Code → Download ZIP**, puis décompresse) ou `git clone`, dans le dossier de ton choix.
 
 ### 2. ComfyUI portable pour AMD
-Télécharge `ComfyUI_windows_portable_amd.7z` depuis les
-[versions de ComfyUI](https://github.com/comfyanonymous/ComfyUI/releases) (testé avec **v0.44.0**, ROCm 7.2.1,
+Télécharge `ComfyUI_windows_portable_amd.7z` depuis la
+[version v0.44.0 de ComfyUI](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.44.0) (testé avec ROCm 7.2.1,
 PyTorch 2.9.1) et décompresse-le dans un sous-dossier `comfyui\` de Clip Motion (7-Zip, ou l'Explorateur de
 Windows 11). Tu dois obtenir `comfyui\ComfyUI_windows_portable\python_embeded\python.exe`.
 
@@ -120,7 +139,9 @@ Chaque fichier va dans le dossier indiqué, sous `comfyui\ComfyUI_windows_portab
 
 Les noms doivent être exactement ceux-ci : Clip Motion les appelle par leur nom.
 
-### 5. Lancer
+</details>
+
+### Lancer
 Double-clique sur **`Clip Motion.bat`** : l'interface s'ouvre dans ton navigateur (http://127.0.0.1:8189, locale
 seulement). Laisse la fenêtre noire ouverte : la fermer arrête l'interface et la tâche en cours. ComfyUI est démarré
 et arrêté tout seul quand il faut générer.
