@@ -4,6 +4,7 @@
 
 **Français** · [English summary](#english-summary)
 
+[![Dernière version](https://img.shields.io/github/v/release/BandDiLondon/Clip-Motion)](../../releases/latest)
 [![Licence GPLv3](https://img.shields.io/badge/licence-GPLv3-blue)](LICENSE)
 [![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078d4)](#prérequis)
 [![Carte AMD](https://img.shields.io/badge/GPU-AMD%20ROCm-ed1c24)](#prérequis)
@@ -74,8 +75,9 @@ Windows 11 with an AMD Radeon RX 9070 XT (16 GB, ROCm); the post-processing step
 
 ## Installation
 
-1. Télécharge ce dépôt (**Code → Download ZIP**, puis décompresse) ou `git clone`, de préférence près de la racine
-   du disque (ex. `C:\Clip-Motion`).
+1. Télécharge `Clip-Motion-vX.Y.Z.zip` dans l'onglet **[Releases](../../releases/latest)** (seulement les fichiers
+   utiles) et décompresse-le, de préférence près de la racine du disque (ex. `C:\Clip-Motion`). Autres possibilités :
+   **Code → Download ZIP**, ou `git clone`.
 2. Double-clique sur **`Installer.bat`**. Il affiche ce qui manque et la place nécessaire, demande confirmation, puis
    installe sans droits administrateur :
    - ComfyUI portable pour AMD **v0.44.0** (1,7 Go, ~8 Go une fois décompressé) dans `comfyui\` ;
