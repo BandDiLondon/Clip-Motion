@@ -4,6 +4,18 @@
 
 **Français** · [English summary](#english-summary)
 
+> [!WARNING]
+> **Développement arrêté (novembre 2026).** Clip Motion n'est plus développé : son moteur (Wan 2.2 en local, segments
+> de 5 à 30 s, revue des clips) est intégré à **La Fabrique**, le nouvel outil de l'auteur qui fait toutes les étapes
+> d'un film IA en local (histoire, images, animation, voix, musique, montage, vertical, publication). La Fabrique sera
+> publiée sur ce compte GitHub. Clip Motion reste disponible et utilisable tel quel (GPLv3), sans nouvelles versions ni
+> corrections.
+>
+> **Development stopped (November 2026).** Clip Motion is no longer developed: its engine (local Wan 2.2, 5 to 30 s
+> segments, clip review) now lives in **La Fabrique**, the author's new tool that runs every step of an AI film locally
+> (story, images, animation, voice, music, editing, vertical, publishing). La Fabrique will be published on this GitHub
+> account. Clip Motion stays available and usable as is (GPLv3), with no new releases or fixes.
+
 [![Dernière version](https://img.shields.io/github/v/release/BandDiLondon/Clip-Motion)](../../releases/latest)
 [![Licence GPLv3](https://img.shields.io/badge/licence-GPLv3-blue)](LICENSE)
 [![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078d4)](#prérequis)
